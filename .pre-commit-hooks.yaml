@@ -1,5 +1,5 @@
 - id: qml-format
-  name: QML Formatter
+  name: qml format
   description: Format QML files using qmlformat
   entry: qml-format-hook
   language: python

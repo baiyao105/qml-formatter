@@ -1,0 +1,9 @@
+- id: qml-format
+  name: QML Formatter
+  description: Format QML files using qmlformat
+  entry: qml-format-hook
+  language: python
+  files: \.qml$
+  require_serial: false
+  additional_dependencies: ["pyside6~=6.10.0"]
+  minimum_pre_commit_version: "2.9.0"

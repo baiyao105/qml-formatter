@@ -1,0 +1,22 @@
+[project]
+name = "qml-formatter"
+dynamic = ["version"]
+description = "Pre-commit hook for QML formatting using `qmlformat`"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "baiyao105", email = "nell_baiyao@outlook.jp" },
+]
+dependencies = ["pyside6~=6.10.0"]
+keywords = ["qml", "formatter", "pre-commit", "qt"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+qml-format-hook = "qml_formatter_hook.main:main"
+
+[tool.hatch.version]
+path = "qml_formatter_hook/__init__.py"

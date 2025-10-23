@@ -9,7 +9,7 @@ Add to your `.pre-commit-config.yaml`:
 ```yaml
 repos:
   - repo: https://github.com/baiyao105/qml-formatter
-    rev: v1
+    rev: v1.0.0
     hooks:
       - id: qml-format
 ```
